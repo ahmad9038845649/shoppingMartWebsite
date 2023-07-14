@@ -13,6 +13,7 @@ app.use(express.json());
 
 app.use("/api", require("./router/fetchData"));
 app.use(require("./router/userRoute"));
+app.use(require("./router/postOrder"));
 
 // Serve static files
 app.use(express.static(path.join(__dirname, "./super-mart/build")));
